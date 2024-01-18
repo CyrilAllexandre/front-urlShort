@@ -1,0 +1,18 @@
+footer{
+    bottom:0;
+    position:fixed;
+    padding:24px;
+    border-top: 1px solid black;
+    width: 100%
+}
+
+header{
+    text-align: center;
+    width:100%
+}
+
+body {
+    font-family: cursive;
+}
+
+/* You can add global styles to this file, and also import other style files */
