@@ -1,18 +1,37 @@
-footer{
-    bottom:0;
-    position:fixed;
-    padding:24px;
-    border-top: 1px solid black;
-    width: 100%
-}
-
-header{
-    text-align: center;
-    width:100%
-}
-
 body {
-    font-family: cursive;
+    font-family: 'Josefin';
+    margin:0;
 }
 
-/* You can add global styles to this file, and also import other style files */
+input {
+    padding: 8px;
+    font-family: 'Josefin';
+    border: 1px solid #51ACDC;
+    border-radius: 4px;
+    height: 100%;
+
+    &:focus {
+        outline: 1px solid #51ACDC;
+    }
+}
+button {
+    padding: 8px;
+    margin-left: 10px;
+    font-family: 'Josefin';
+    background-color: rgba(170,219, 245, 0.2);
+    color: #51ACDC;
+    border: 1px solid #51ACDC;
+    border-radius: 16px;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('assets/fonts/Josefin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#response {
+    color: #51ACDC;
+    cursor: pointer;
+}

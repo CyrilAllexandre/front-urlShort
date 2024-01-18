@@ -25,8 +25,19 @@ export class UrlRetrieveComponent {
         this.urlResponse = response;
       },
       (error) => {
-        console.error('Erreur lors de la requête HTTP', error);
+        if (error.status === 404) {
+          this.urlResponse ='No full URL were found with this URL';
+        } else {
+          console.error('An error occured during HTTP request', error);
+        }
       }
     );
+  }
+
+  
+  copy() {
+    let textToCopy = document.getElementById('response')?.innerHTML;
+    navigator.clipboard.writeText(textToCopy ?? '')
+    alert('Copied')
   }
 }

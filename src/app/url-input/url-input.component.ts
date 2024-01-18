@@ -24,8 +24,14 @@ export class UrlInputComponent {
         this.urlResponse = response;
       },
       (error) => {
-        console.error('Erreur lors de la requête HTTP', error);
+        console.error('An error occured during HTTP request', error);
       }
     );
+  }
+
+  copy() {
+    let textToCopy = document.getElementById('response')?.innerHTML;
+    navigator.clipboard.writeText(textToCopy ?? '')
+    alert('Copied')
   }
 }

@@ -1,10 +1,10 @@
 <form (ngSubmit)="submitUrl(url)">
-    <label for="urlInput">URL:</label>
+    <label for="urlInput">URL : </label>
     <input type="text" id="urlInput" [(ngModel)]="url" name="url">
-    <button type="submit">Envoyer</button>
+    <button type="submit">Submit</button>
   </form>
 
 
-  <p>Response: {{urlResponse}}</p>
+  <p>Response: <span id="response" (click)="copy()">{{urlResponse}}</span></p>
 
 

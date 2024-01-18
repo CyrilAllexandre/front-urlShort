@@ -1,7 +1,9 @@
-
 <header>
   <h1>Url Shortener</h1>
-  <nav><a routerLink="/submit">Submit Url</a><a routerLink="/retrieve">Retrieve Url</a></nav>
+  <nav>
+    <a routerLink="/submit" [ngClass]="{'active':isSubmitPage}">Submit Url</a>
+    <a routerLink="/retrieve" [ngClass]="{'active':isRetrievePage}">Retrieve Url</a>
+  </nav>
 </header>
 <main>
   <router-outlet></router-outlet>

@@ -1,7 +1,7 @@
 <form (ngSubmit)="retrieveUrl(url)">
-    <label for="urlRetrieve">URL:</label>
+    <label for="urlRetrieve">URL : </label>
     <input type="text" id="urlRetrieve" [(ngModel)]="url" name="url">
-    <button type="submit">Retrouver</button>
-  </form>
+    <button type="submit">Retrieve</button>
+</form>
 
-  <p>Response: {{urlResponse}}</p>
+<p>Response: <span id="response" (click)="copy()">{{urlResponse}}</span></p>
